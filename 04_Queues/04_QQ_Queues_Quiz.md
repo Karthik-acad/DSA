@@ -88,7 +88,8 @@ cout << q.front();
 
 Trace BFS from node 0. What order are nodes visited?
 
-> [!answer]- Answer Order: 0, 1, 2, 3, 4. Queue trace: start with [0] visited={0}. Pop 0, push neighbors 1,2: queue=[1,2] visited={0,1,2}. Pop 1, push unvisited neighbor 3: queue=[2,3] visited={0,1,2,3}. Pop 2, push unvisited neighbor 4: queue=[3,4] visited={0,1,2,3,4}. Pop 3, no unvisited neighbors. Pop 4, no unvisited neighbors. Done.
+> [!answer]- 
+> Answer Order: 0, 1, 2, 3, 4. Queue trace: start with [0] visited={0}. Pop 0, push neighbors 1,2: queue=[1,2] visited={0,1,2}. Pop 1, push unvisited neighbor 3: queue=[2,3] visited={0,1,2,3}. Pop 2, push unvisited neighbor 4: queue=[3,4] visited={0,1,2,3,4}. Pop 3, no unvisited neighbors. Pop 4, no unvisited neighbors. Done.
 
 ---
 
@@ -104,7 +105,8 @@ q.enqueue(6);
 q.enqueue(7);  // should this work?
 ```
 
-> [!answer]- Answer Yes it should work — and will work correctly with a proper circular queue implementation. After 5 enqueues: full. After 2 dequeues: size=3, two slots freed at front. After 3 more enqueues: size=5, those freed slots reused via wraparound. Total capacity still 5. If someone implemented this with a naive linear array instead, the third enqueue after dequeuing would incorrectly report overflow even though only 3 of 5 logical slots are used — this is exactly the front-creep bug that circular queues fix.
+> [!answer]- 
+> Answer Yes it should work — and will work correctly with a proper circular queue implementation. After 5 enqueues: full. After 2 dequeues: size=3, two slots freed at front. After 3 more enqueues: size=5, those freed slots reused via wraparound. Total capacity still 5. If someone implemented this with a naive linear array instead, the third enqueue after dequeuing would incorrectly report overflow even though only 3 of 5 logical slots are used — this is exactly the front-creep bug that circular queues fix.
 
 ---
 
