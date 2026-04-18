@@ -1,6 +1,4 @@
 
-And finally `05_00_Priority_Queues_and_Heaps.md`:
-
 ---
 
 # Priority Queues and Heaps
@@ -54,7 +52,7 @@ $$\text{parent}(i) = \lfloor (i-1)/2 \rfloor$$ $$\text{leftChild}(i) = 2i + 1$$ 
 
 ### Min vs Max Heap
 
-||Max-Heap|Min-Heap|
+| |Max-Heap|Min-Heap|
 |---|---|---|
 |Root|Maximum|Minimum|
 |C++ STL|`priority_queue<int>`|`priority_queue<int, vector<int>, greater<int>>`|
