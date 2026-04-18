@@ -1,6 +1,4 @@
 
-Here is `03_04_08_Stock_Span_Problem.md`:
-
 ---
 
 # Stock Span Problem
