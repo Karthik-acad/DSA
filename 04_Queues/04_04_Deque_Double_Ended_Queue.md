@@ -1,6 +1,4 @@
 
-Here is `04_04_Deque_Double_Ended_Queue.md`:
-
 ---
 
 # Deque — Double Ended Queue
