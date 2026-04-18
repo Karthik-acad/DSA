@@ -1,6 +1,4 @@
 
-Here is `03_04_04_PGE_Previous_Greater_Element.md`:
-
 ---
 
 # Previous Greater Element
