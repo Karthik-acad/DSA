@@ -1,6 +1,4 @@
 
-And finally `02_00_Linked_Lists.md`:
-
 ---
 
 # Linked Lists

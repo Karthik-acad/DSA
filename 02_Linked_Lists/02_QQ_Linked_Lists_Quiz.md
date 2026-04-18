@@ -1,6 +1,4 @@
 
-Here is `02_QQ_Linked_Lists_Quiz.md`:
-
 ---
 
 ## Quiz — Linked Lists
