@@ -20,7 +20,8 @@ What does this do and what is its complexity?
 - [ ] Finds the middle node — $O(n)$
 - [ ] $O(1)$
 
-> [!answer]- Answer Finds the second to last node in O(n). The condition curr->next->next checks that there are at least two more nodes ahead — so when the loop exits, curr->next is the last node and curr is second to last. Useful for deleting the last node without a tail pointer.
+> [!answer]- 
+> Answer Finds the second to last node in O(n). The condition curr->next->next checks that there are at least two more nodes ahead — so when the loop exits, curr->next is the last node and curr is second to last. Useful for deleting the last node without a tail pointer.
 
 ---
 
@@ -37,7 +38,8 @@ list.reverse();
 list.print();
 ```
 
-> [!answer]- Answer Step by step: after insertBack x3: 1->2->3. After insertFront: 0->1->2->3. After deleteVal(2): 0->1->3. After reverse: 3->1->0->nullptr.
+> [!answer]- 
+> Answer Step by step: after insertBack x3: 1->2->3. After insertFront: 0->1->2->3. After deleteVal(2): 0->1->3. After reverse: 3->1->0->nullptr.
 
 ---
 
@@ -46,7 +48,8 @@ list.print();
 - [ ] True
 - [ ] False
 
-> [!answer]- Answer True. In a doubly linked list, node->prev and node->next give you everything needed to stitch the neighbors together in O(1). In a singly linked list you need the predecessor to update its next pointer, and finding it requires traversing from head in O(n). There is a trick to delete a singly linked list node in O(1) by copying the next node's data into the current node and deleting next — but this fails for the last node.
+> [!answer]- 
+> Answer True. In a doubly linked list, node->prev and node->next give you everything needed to stitch the neighbors together in O(1). In a singly linked list you need the predecessor to update its next pointer, and finding it requires traversing from head in O(n). There is a trick to delete a singly linked list node in O(1) by copying the next node's data into the current node and deleting next — but this fails for the last node.
 
 ---
 
@@ -78,7 +81,8 @@ bool hasCycle(Node* head) {
 
 **Q6 — Write it Yourself** Given a singly linked list, find the $k$-th node from the end in a single pass without knowing the length. Then find the middle node in a single pass.
 
-> [!answer]- Answer k-th from end — runner technique with fixed gap:
+> [!answer]- 
+> Answer k-th from end — runner technique with fixed gap:
 > 
 > ```cpp
 > Node* kthFromEnd(Node* head, int k) {
@@ -112,13 +116,15 @@ bool hasCycle(Node* head) {
 - [ ] Push $O(1)$, Pop $O(n)$
 - [ ] Push $O(n)$, Pop $O(1)$
 
-> [!answer]- Answer Push O(1) and Pop O(1). Insert at head is O(1) for push, delete head is O(1) for pop — the doubly linked list gives you both for free. This is actually how std::stack works internally when backed by std::list.
+> [!answer]- 
+> Answer Push O(1) and Pop O(1). Insert at head is O(1) for push, delete head is O(1) for pop — the doubly linked list gives you both for free. This is actually how std::stack works internally when backed by std::list.
 
 ---
 
 **Q8 — Write it Yourself** Reverse a singly linked list iteratively. Then think — can you do it recursively? What is the space complexity of the recursive version and why?
 
-> [!answer]- Answer Iterative — O(n) time, O(1) space:
+> [!answer]- 
+> Answer Iterative — O(n) time, O(1) space:
 > 
 > ```cpp
 > Node* reverse(Node* head) {
