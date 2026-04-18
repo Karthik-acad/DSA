@@ -42,3 +42,5 @@ int main() {
 ```
 
 **Complexity:** Time $O(n)$, Space $O(n)$ — in the worst case (all opening brackets) the stack holds all $n$ characters.
+
+---
