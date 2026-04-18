@@ -1,6 +1,4 @@
 
-Now the Applications. Here is `03_04_01_Balanced_Parentheses.md`:
-
 ---
 
 # Balanced Parentheses
