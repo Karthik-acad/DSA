@@ -98,11 +98,11 @@ int main() {
 | Operation         | Static Array | Dynamic Array (vector)  |
 | ----------------- | ------------ | ----------------------- |
 | Access by index   | $O(1)$       | $O(1)$                  |
-| Search (unsorted) | $O(1)$       | O(n)O(n) O(n)           |
-| Insert at end     | —            | O(1)O(1) O(1) amortized |
-| Insert at middle  | —            | O(n)O(n) O(n)           |
-| Delete at end     | —            | O(1)O(1) O(1)           |
-| Delete at middle  | —            | O(n)O(n) O(n)           |
+| Search (unsorted) | $O(n)$       | $O(n)$                  |
+| Insert at end     | —            | $O(1) \space Amortized$ |
+| Insert at middle  | —            | $O(n)$                  |
+| Delete at end     | —            | $O(1)$                  |
+| Delete at middle  | —            | $O(n)$                  |
 | Memory overhead   | None         | Small (size + capacity) |
 
 The insert and delete at middle are O(n)O(n) O(n) because all elements after the insertion point must be shifted one position — this is the fundamental weakness of arrays compared to linked lists. However arrays win on access time — linked lists are O(n)O(n) O(n) to access by index while arrays are always O(1)O(1) O(1).
