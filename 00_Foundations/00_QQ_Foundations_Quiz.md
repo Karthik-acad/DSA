@@ -12,10 +12,10 @@ What is the time complexity of the following?
 int x = arr[n/2];
 ```
 
-- [ ] $O(1)$
-- [ ] $O(n)$
-- [ ] $\Theta(1)$
-- [ ] $o(n)$
+- [x] $O(1)$
+- [x] $O(n)$
+- [x] $\Theta(1)$
+- [x] $o(n)$
 
 > [!answer]-
 >  O(1), Theta(1), and o(n) are all correct. Direct index access is constant time regardless of n, so it is simultaneously bounded above by O(1), exactly Theta(1), and strictly slower than any O(n) function making it o(n) as well. Multiple answers can be correct — this is intentional.
