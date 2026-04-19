@@ -109,6 +109,7 @@ Insertion Sort on an already sorted array:
 ### Q7 — Write it Yourself
 
 Write a function that checks if an array has any duplicate elements. Analyse its time and space complexity. Can you do it in O(n) time? What is the space tradeoff?
+(Hint/Advice: You can come back to this after reading [[06_03_00_Hash_Tables]])
 
 > [!answer]- 
 > Naive — O(n^2) time, O(1) space:
