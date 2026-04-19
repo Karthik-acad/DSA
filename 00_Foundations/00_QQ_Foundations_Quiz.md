@@ -102,7 +102,7 @@ Insertion Sort on an already sorted array:
 - [ ] $o(n^2)$
 
 > [!answer]- 
-> O(n^2), Theta(n), Omega(n), and o(n^2) are all correct. On a sorted array, the inner loop never executes — each element is already in place, so only n comparisons are made total making it Theta(n) in this best case. It is still O(n^2) as a valid upper bound, and o(n^2) since it is strictly slower than quadratic here. Theta(n^2) is false — that only holds for the worst case.
+> $O(n^2), \Theta(n), \Omega(n), and \space o(n^2)$ are all correct. On a sorted array, the inner loop never executes — each element is already in place, so only n comparisons are made total making it Theta(n) in this best case. It is still O(n^2) as a valid upper bound, and o(n^2) since it is strictly slower than quadratic here. Theta(n^2) is false — that only holds for the worst case.
 
 ---
 
