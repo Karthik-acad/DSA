@@ -17,7 +17,8 @@ int x = arr[n/2];
 - [ ] $\Theta(1)$
 - [ ] $o(n)$
 
-> [!answer]- O(1), Theta(1), and o(n) are all correct. Direct index access is constant time regardless of n, so it is simultaneously bounded above by O(1), exactly Theta(1), and strictly slower than any O(n) function making it o(n) as well. Multiple answers can be correct — this is intentional.
+> [!answer]-
+>  O(1), Theta(1), and o(n) are all correct. Direct index access is constant time regardless of n, so it is simultaneously bounded above by O(1), exactly Theta(1), and strictly slower than any O(n) function making it o(n) as well. Multiple answers can be correct — this is intentional.
 
 ---
 
@@ -37,7 +38,8 @@ Which of the following are true?
 - [ ] $o(n^3)$
 - [ ] $\Omega(n)$
 
-> [!answer]- All five are correct. The inner loop runs n-i times for each i, giving total iterations = n + (n-1) + ... + 1 = n(n+1)/2 = Theta(n^2). Since it is Theta(n^2), it is also O(n^2), O(n^3), o(n^3) (strictly slower than cubic), and Omega(n) (at least linear).
+> [!answer]- 
+> All five are correct. The inner loop runs n-i times for each i, giving total iterations = n + (n-1) + ... + 1 = n(n+1)/2 = Theta(n^2). Since it is Theta(n^2), it is also O(n^2), O(n^3), o(n^3) (strictly slower than cubic), and Omega(n) (at least linear).
 
 ---
 
@@ -48,7 +50,8 @@ For any two functions $f(n)$ and $g(n)$, if $f(n) = O(g(n))$ then $g(n) = \Omega
 - [ ] True
 - [ ] False
 
-> [!answer]- True. This follows directly from the definitions. If f(n) <= c * g(n) for all n >= n_0, then rearranging gives g(n) >= (1/c) * f(n), which is exactly the definition of g(n) = Omega(f(n)).
+> [!answer]- 
+> True. This follows directly from the definitions. If f(n) <= c * g(n) for all n >= n_0, then rearranging gives g(n) >= (1/c) * f(n), which is exactly the definition of g(n) = Omega(f(n)).
 
 ---
 
@@ -65,7 +68,8 @@ void printPairs(vector<int>& arr) {
 }
 ```
 
-> [!answer]- Time: Theta(n^2) — two nested loops each running n times, every iteration does O(1) work. Space: O(1) auxiliary — only i, j, and n are used regardless of input size. The input array itself is not counted as auxiliary space.
+> [!answer]- 
+> Time: Theta(n^2) — two nested loops each running n times, every iteration does O(1) work. Space: O(1) auxiliary — only i, j, and n are used regardless of input size. The input array itself is not counted as auxiliary space.
 
 ---
 
@@ -82,7 +86,8 @@ int mystery(int n) {
 - Solve it using the Master Theorem.
 - What is the time complexity?
 
-> [!answer]- Recurrence: T(n) = 2T(n/2) + O(1) Master Theorem: a = 2, b = 2, so n^(log_2 2) = n^1 = n. And f(n) = O(1) = O(n^(1 - epsilon)) for epsilon = 1 — Case 1 applies. Result: Theta(n) Intuitively — even though it looks like it doubles work each time, the subproblems shrink equally fast, so total work is linear.
+> [!answer]- 
+> Recurrence: T(n) = 2T(n/2) + O(1) Master Theorem: a = 2, b = 2, so n^(log_2 2) = n^1 = n. And f(n) = O(1) = O(n^(1 - epsilon)) for epsilon = 1 — Case 1 applies. Result: Theta(n) Intuitively — even though it looks like it doubles work each time, the subproblems shrink equally fast, so total work is linear.
 
 ---
 
@@ -96,7 +101,8 @@ Insertion Sort on an already sorted array:
 - [ ] $\Omega(n)$
 - [ ] $o(n^2)$
 
-> [!answer]- O(n^2), Theta(n), Omega(n), and o(n^2) are all correct. On a sorted array, the inner loop never executes — each element is already in place, so only n comparisons are made total making it Theta(n) in this best case. It is still O(n^2) as a valid upper bound, and o(n^2) since it is strictly slower than quadratic here. Theta(n^2) is false — that only holds for the worst case.
+> [!answer]- 
+> O(n^2), Theta(n), Omega(n), and o(n^2) are all correct. On a sorted array, the inner loop never executes — each element is already in place, so only n comparisons are made total making it Theta(n) in this best case. It is still O(n^2) as a valid upper bound, and o(n^2) since it is strictly slower than quadratic here. Theta(n^2) is false — that only holds for the worst case.
 
 ---
 
