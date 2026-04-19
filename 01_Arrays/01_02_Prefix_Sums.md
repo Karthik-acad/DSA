@@ -16,7 +16,7 @@ $$sum(l,r)=P[r]−P[l−1]$$
 
 Think of it like a running total on a receipt. Instead of re-adding every time, you just look at two totals and subtract.
 
-> **Definition.** A *prefix sum array* $P$ of array $A$ is defined as $$P[i]=\sum_{k=0}^{i} A[j]$$$ A range sum query $(l,r)$ is then answered in $O(1)$ as $$ P[r]−P[l−1]$$
+> **Definition.** A *prefix sum array* $P$ of array $A$ is defined as $$P[i]=\sum_{k=0}^{i} A[j]$$ A range sum query $(l,r)$ is then answered in $O(1)$ as $$ P[r]−P[l−1]$$
 
 ```cpp
 #include <iostream>
