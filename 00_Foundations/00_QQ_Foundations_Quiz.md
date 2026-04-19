@@ -110,7 +110,8 @@ Insertion Sort on an already sorted array:
 
 Write a function that checks if an array has any duplicate elements. Analyse its time and space complexity. Can you do it in O(n) time? What is the space tradeoff?
 
-> [!answer]- Naive — O(n^2) time, O(1) space:
+> [!answer]- 
+> Naive — O(n^2) time, O(1) space:
 > 
 > ```cpp
 > bool hasDuplicate(vector<int>& arr) {
@@ -157,7 +158,8 @@ Which are true?
 - [ ] $O(n^2)$
 - [ ] $\Omega(n)$
 
-> [!answer]- O(2^n) and Omega(n) are correct. The tight bound is actually Theta(phi^n) where phi = 1.618 (the golden ratio), making Theta(2^n) false though O(2^n) holds as a valid upper bound. O(n^2) is false — the growth is exponential not polynomial. Each call branches into two and the tree has depth n, giving roughly 2^n nodes total.
+> [!answer]- 
+> O(2^n) and Omega(n) are correct. The tight bound is actually Theta(phi^n) where phi = 1.618 (the golden ratio), making Theta(2^n) false though O(2^n) holds as a valid upper bound. O(n^2) is false — the growth is exponential not polynomial. Each call branches into two and the tree has depth n, giving roughly 2^n nodes total.
 
 ---
 
@@ -173,7 +175,8 @@ void mystery(int n) {
 }
 ```
 
-> [!answer]- Prints: 1 2 3 4 The recursive call happens before the print, so the function descends all the way to n=0 first, then prints on the way back up. This is the classic pattern of post-order execution in recursion — the work happens after the recursive call returns.
+> [!answer]- 
+> Prints: 1 2 3 4 The recursive call happens before the print, so the function descends all the way to n=0 first, then prints on the way back up. This is the classic pattern of post-order execution in recursion — the work happens after the recursive call returns.
 
 ---
 
@@ -187,7 +190,8 @@ Solve the following recurrences. Write your reasoning before revealing.
 
 **c)** $T(n) = T(n/2) + O(1)$
 
-> [!answer]- a) a=3, b=3, n^(log_3 3) = n^1 = n. f(n) = O(n) = Theta(n) — Case 2. Result: Theta(n log n). This is essentially Merge Sort's recurrence.
+> [!answer]- 
+> a) a=3, b=3, n^(log_3 3) = n^1 = n. f(n) = O(n) = Theta(n) — Case 2. Result: Theta(n log n). This is essentially Merge Sort's recurrence.
 > 
 > b) a=4, b=2, n^(log_2 4) = n^2. f(n) = O(n) = O(n^(2-1)) — Case 1. Result: Theta(n^2). The recursive work dominates.
 > 
@@ -205,7 +209,8 @@ int sum(int n) {
 }
 ```
 
-> [!answer]- Missing base case. There is no condition to stop the recursion — it will call itself with n=0, then n=-1, then n=-2 and so on forever until a stack overflow crashes the program. Fix:
+> [!answer]- 
+> Missing base case. There is no condition to stop the recursion — it will call itself with n=0, then n=-1, then n=-2 and so on forever until a stack overflow crashes the program. Fix:
 > 
 > ```cpp
 > int sum(int n) {
@@ -220,7 +225,8 @@ int sum(int n) {
 
 Write a recursive function to compute x^n. Then think — can you do it faster than O(n)? Hint: x^n = x^(n/2) * x^(n/2).
 
-> [!answer]- Naive — O(n):
+> [!answer]- 
+> Naive — O(n):
 > 
 > ```cpp
 > int power(int x, int n) {
@@ -256,6 +262,7 @@ void mystery(int n) {
 }
 ```
 
-> [!answer]- Work is done before the recursive call — this is pre-order execution. For n=4 it prints 4 3 2 1. Compare with Q2 where work was after the call (post-order) and printed 1 2 3 4. This distinction matters a lot in tree traversals — pre-order visits the node before its children, post-order visits after. You will see this again directly in [[07_01_02_Traversals_Inorder_Preorder_Postorder]].
+> [!answer]- 
+> Work is done before the recursive call — this is pre-order execution. For n=4 it prints 4 3 2 1. Compare with Q2 where work was after the call (post-order) and printed 1 2 3 4. This distinction matters a lot in tree traversals — pre-order visits the node before its children, post-order visits after. You will see this again directly in [[07_01_02_Traversals_Inorder_Preorder_Postorder]].
 
 ---
