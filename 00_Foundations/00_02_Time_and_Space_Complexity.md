@@ -72,72 +72,58 @@ Summarising all five together:
 |$o(g)$|$f$ grows strictly slower than $g$|Yes|
 |$\omega(g)$|$f$ grows strictly faster than $g$|Yes|
 ```dataviewjs
-const nMax = 20; // Increase this to see more growth
-const n = Array.from({length: nMax}, (_, i) => i + 1);
+const nValues = Array.from({length: 50}, (_, i) => i + 1);
 
-const chartData = {
-    type: 'line',
-    data: {
-        labels: n,
-        datasets: [
-            {
-                label: 'O(log n)',
-                data: n.map(i => Math.log2(i).toFixed(2)),
-                borderColor: '#2ecc71', // Emerald Green
-                backgroundColor: '#2ecc71',
-                borderWidth: 2,
-                pointRadius: 0 // Performance: don't render individual dots
-            },
-            {
-                label: 'O(n)',
-                data: n,
-                borderColor: '#3498db', // Bright Blue
-                backgroundColor: '#3498db',
-                borderWidth: 2,
-                pointRadius: 0
-            },
-            {
-                label: 'O(n log n)',
-                data: n.map(i => (i * Math.log2(i)).toFixed(2)),
-                borderColor: '#9b59b6', // Amethyst Purple
-                backgroundColor: '#9b59b6',
-                borderWidth: 2,
-                pointRadius: 0
-            },
-            {
-                label: 'O(n²)',
-                data: n.map(i => i ** 2),
-                borderColor: '#e74c3c', // Alizarin Red
-                backgroundColor: '#e74c3c',
-                borderWidth: 2,
-                pointRadius: 0
-            }
-        ]
+const data = [
+    {
+        x: nValues,
+        y: nValues.map(n => Math.log2(n)),
+        name: 'O(log n)',
+        mode: 'lines',
+        line: { color: '#2ecc71', width: 3 }
     },
-    options: {
-        responsive: true,
-        animation: false, // Performance: disables CPU-heavy animations
-        plugins: {
-            legend: { 
-                labels: { color: '#333', font: { weight: 'bold' } } 
-            }
-        },
-        scales: {
-            x: {
-                grid: { display: false },
-                title: { display: true, text: 'Input Size (n)', color: '#666' }
-            },
-            y: {
-                type: 'linear', // Change to 'logarithmic' for very large n
-                beginAtZero: true,
-                grid: { color: '#eee' },
-                title: { display: true, text: 'Operations', color: '#666' }
-            }
-        }
+    {
+        x: nValues,
+        y: nValues,
+        name: 'O(n)',
+        mode: 'lines',
+        line: { color: '#3498db', width: 3 }
+    },
+    {
+        x: nValues,
+        y: nValues.map(n => n * Math.log2(n)),
+        name: 'O(n log n)',
+        mode: 'lines',
+        line: { color: '#9b59b6', width: 3 }
+    },
+    {
+        x: nValues,
+        y: nValues.map(n => n**2),
+        name: 'O(n²)',
+        mode: 'lines',
+        line: { color: '#e74c3c', width: 3 }
     }
+];
+
+const layout = {
+    title: 'Interactive Big O Complexity',
+    paper_bgcolor: 'rgba(0,0,0,0)', // Transparent background for theme compatibility
+    plot_bgcolor: '#fdfdfd',      // Clean light mode background
+    xaxis: { title: 'Input Size (n)', gridcolor: '#eee' },
+    yaxis: { title: 'Operations', gridcolor: '#eee' },
+    hovermode: 'x unified',       // Shows all values when hovering over X-axis
+    margin: { t: 50, b: 50, l: 50, r: 50 }
 };
 
-window.renderChart(chartData, this.container);
+const config = {
+    responsive: true,
+    displaylogo: false,
+    modeBarButtonsToRemove: ['lasso2d', 'select2d'] // Cleans up the toolbar
+};
+
+// Use the Plotly plugin's internal renderer
+window.renderPlotly(this.container, data, layout, config);
+
 ```
 ---
 ## Seeing it in Code
