@@ -71,7 +71,74 @@ Summarising all five together:
 |$\Theta(g)$|$f$ grows at exactly the same rate as $g$|Both sides bounded|
 |$o(g)$|$f$ grows strictly slower than $g$|Yes|
 |$\omega(g)$|$f$ grows strictly faster than $g$|Yes|
+```dataview
+const nMax = 20; // Increase this to see more growth
+const n = Array.from({length: nMax}, (_, i) => i + 1);
 
+const chartData = {
+    type: 'line',
+    data: {
+        labels: n,
+        datasets: [
+            {
+                label: 'O(log n)',
+                data: n.map(i => Math.log2(i).toFixed(2)),
+                borderColor: '#2ecc71', // Emerald Green
+                backgroundColor: '#2ecc71',
+                borderWidth: 2,
+                pointRadius: 0 // Performance: don't render individual dots
+            },
+            {
+                label: 'O(n)',
+                data: n,
+                borderColor: '#3498db', // Bright Blue
+                backgroundColor: '#3498db',
+                borderWidth: 2,
+                pointRadius: 0
+            },
+            {
+                label: 'O(n log n)',
+                data: n.map(i => (i * Math.log2(i)).toFixed(2)),
+                borderColor: '#9b59b6', // Amethyst Purple
+                backgroundColor: '#9b59b6',
+                borderWidth: 2,
+                pointRadius: 0
+            },
+            {
+                label: 'O(n²)',
+                data: n.map(i => i ** 2),
+                borderColor: '#e74c3c', // Alizarin Red
+                backgroundColor: '#e74c3c',
+                borderWidth: 2,
+                pointRadius: 0
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        animation: false, // Performance: disables CPU-heavy animations
+        plugins: {
+            legend: { 
+                labels: { color: '#333', font: { weight: 'bold' } } 
+            }
+        },
+        scales: {
+            x: {
+                grid: { display: false },
+                title: { display: true, text: 'Input Size (n)', color: '#666' }
+            },
+            y: {
+                type: 'linear', // Change to 'logarithmic' for very large n
+                beginAtZero: true,
+                grid: { color: '#eee' },
+                title: { display: true, text: 'Operations', color: '#666' }
+            }
+        }
+    }
+};
+
+window.renderChart(chartData, this.container);
+```
 ---
 ## Seeing it in Code
 
