@@ -32,11 +32,11 @@ for (int i = 0; i < n; i++)
 
 Which of the following are true?
 
-- [ ] $O(n^2)$
-- [ ] $\Theta(n^2)$
-- [ ] $O(n^3)$
-- [ ] $o(n^3)$
-- [ ] $\Omega(n)$
+- [x] $O(n^2)$
+- [x] $\Theta(n^2)$
+- [x] $O(n^3)$
+- [x] $o(n^3)$
+- [x] $\Omega(n)$
 
 > [!answer]- 
 > All five are correct. The inner loop runs n-i times for each i, giving total iterations = n + (n-1) + ... + 1 = n(n+1)/2 = Theta(n^2). Since it is Theta(n^2), it is also O(n^2), O(n^3), o(n^3) (strictly slower than cubic), and Omega(n) (at least linear).
