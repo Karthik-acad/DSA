@@ -71,7 +71,7 @@ Summarising all five together:
 |$\Theta(g)$|$f$ grows at exactly the same rate as $g$|Both sides bounded|
 |$o(g)$|$f$ grows strictly slower than $g$|Yes|
 |$\omega(g)$|$f$ grows strictly faster than $g$|Yes|
-```dataview
+```dataviewjs
 const nMax = 20; // Increase this to see more growth
 const n = Array.from({length: nMax}, (_, i) => i + 1);
 
