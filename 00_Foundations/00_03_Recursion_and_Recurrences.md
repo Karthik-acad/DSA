@@ -10,7 +10,7 @@ It sounds circular at first — and it would be, if we weren't careful. The key 
 
 Think of it like a stack of identical tasks. You're asked to sum the numbers 1 through 5. Instead of doing it all at once, you say — "I'll add 5 to whatever the sum of 1 through 4 is." Then the same logic applies to 1 through 4, and so on, until you reach "sum of just 1" which is obviously 1. Then the answers bubble back up.
 
-$\sum{5} = $
+$\sum{5} = 5+\sum{4}=5+(4+\sum{3}) ... = 5+4+3+2+1$
 
 
 Every recursive function has exactly two parts:
