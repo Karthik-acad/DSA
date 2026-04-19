@@ -74,7 +74,7 @@ What is the time complexity? Can you do better? How?
 > [!answer]- 
 > 
 > Answer 
-> is 2 (subarray [4,3]). Trace: right=0 sum=2, right=1 sum=5, right=2 sum=6, right=3 sum=8 >= 7 so minLen=4, shrink left: sum=6 < 7 stop. right=4 sum=10 >= 7 minLen=3, shrink: sum=7 >= 7 minLen=2, shrink: sum=3 < 7 stop. right=5 sum=6 < 7. Final answer: 2.
+> is 2 (subarray [4,3]). Trace: right=0 sum=2, right=1 sum=5, right=2 sum=6, right=3 sum=8 >= 7 so minLen=4, shrink left: sum=6 < 7 stop. right=4 sum=10 >= 7 minLen=4, shrink: sum=7 >= 7 minLen=3, shrink: sum=3 < 7 stop. right=5 sum=6 < 7. Final answer: 2.
 
 ---
 
