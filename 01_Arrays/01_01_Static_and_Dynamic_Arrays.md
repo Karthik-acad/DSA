@@ -105,7 +105,7 @@ int main() {
 | Delete at middle  | —            | $O(n)$                  |
 | Memory overhead   | None         | Small (size + capacity) |
 
-The insert and delete at middle are O(n)O(n) O(n) because all elements after the insertion point must be shifted one position — this is the fundamental weakness of arrays compared to linked lists. However arrays win on access time — linked lists are O(n)O(n) O(n) to access by index while arrays are always O(1)O(1) O(1).
+The insert and delete at middle are $O(n)$ because all elements after the insertion point must be shifted one position — this is the fundamental weakness of arrays compared to linked lists. However arrays win on access time — linked lists are $O(n)$ to access by index while arrays are always $O(1)$.
 
 >  For how vectors are implemented internally: [CPP Reference — std::vector](https://en.cppreference.com/w/cpp/container/vector) 
 >  For a deeper look at amortized analysis: [MIT 6.006 Lecture 2](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/)
