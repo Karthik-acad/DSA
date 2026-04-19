@@ -45,10 +45,10 @@ Build once, query many times: $$P[i] = \sum_{j=0}^{i} A[j]$$ $$\text{sum}(l,r) =
 
 ### Sliding Window
 
-|Variant|When to use|Time|
-|---|---|---|
-|Fixed window|Fixed size $k$ subarray problems|$O(n)$|
-|Variable window|Smallest/largest subarray with condition|$O(n)$|
+| Variant         | When to use                              | Time   |
+| --------------- | ---------------------------------------- | ------ |
+| Fixed window    | Fixed size $k$ subarray problems         | $O(n)$ |
+| Variable window | Smallest/largest subarray with condition | $O(n)$ |
 
 Pattern for variable window — expand right pointer, shrink left pointer when condition is violated.
 
