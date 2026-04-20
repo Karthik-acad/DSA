@@ -1,6 +1,4 @@
 
-Here is `08_04_Quick_Sort.md`:
-
 ---
 
 # Quick Sort

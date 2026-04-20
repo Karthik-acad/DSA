@@ -1,6 +1,4 @@
 
-Here is `08_02_Insertion_Sort.md`:
-
 ---
 
 # Insertion Sort

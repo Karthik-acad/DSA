@@ -1,6 +1,4 @@
 
-Here is `08_08_Stability_and_Comparisons.md`:
-
 ---
 
 # Stability and Comparisons

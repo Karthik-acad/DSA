@@ -1,6 +1,4 @@
 
-And `08_00_Sorting.md`:
-
 ---
 
 # Sorting

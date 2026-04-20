@@ -1,6 +1,4 @@
 
-Here is `08_07_Counting_Sort.md`:
-
 ---
 
 # Counting Sort

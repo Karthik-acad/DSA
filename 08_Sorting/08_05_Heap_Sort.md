@@ -1,6 +1,4 @@
 
-Here is `08_05_Heap_Sort.md`:
-
 ---
 
 # Heap Sort

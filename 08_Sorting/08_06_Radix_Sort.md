@@ -1,6 +1,4 @@
 
-Here is `08_06_Radix_Sort.md`:
-
 ---
 
 # Radix Sort

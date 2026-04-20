@@ -1,6 +1,4 @@
 
-Here is `08_03_Merge_Sort.md`:
-
 ---
 
 # Merge Sort
