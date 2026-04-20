@@ -6,7 +6,7 @@ Here is `12_01_Memoization_vs_Tabulation.md`:
 
 # Memoization vs Tabulation
 
-From our study of recursion in [[00_06_Recursion_and_Recurrences]], we know that naive recursive solutions often recompute the same subproblems repeatedly. **Dynamic programming** solves this by storing the results of subproblems and reusing them.
+From our study of recursion in [[00_03_Recursion_and_Recurrences]], we know that naive recursive solutions often recompute the same subproblems repeatedly. **Dynamic programming** solves this by storing the results of subproblems and reusing them.
 
 Consider Fibonacci — the naive recursive solution computes $fib(5)$ by computing $fib(4)$ and $fib(3)$, but $fib(3)$ is also computed inside $fib(4)$. The call tree has exponential size $O(2^n)$ despite only $O(n)$ distinct subproblems existing.
 

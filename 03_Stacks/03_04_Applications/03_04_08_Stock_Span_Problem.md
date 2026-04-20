@@ -49,6 +49,6 @@ int main() {
 }
 ```
 
-**Complexity:** Time $O(n)$ amortized — this is the exception referenced in [[00_04_Time_and_Space_Complexity]]. The nested while loop looks like $O(n^2)$ but each element is pushed and popped at most once across all iterations, giving $O(n)$ total operations.
+**Complexity:** Time $O(n)$ amortized — this is the exception referenced in [[00_02_Time_and_Space_Complexity]]. The nested while loop looks like $O(n^2)$ but each element is pushed and popped at most once across all iterations, giving $O(n)$ total operations.
 
 ---
