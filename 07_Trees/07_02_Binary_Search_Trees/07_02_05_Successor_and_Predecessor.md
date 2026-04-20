@@ -1,6 +1,4 @@
 
-Here is `07_02_05_Successor_and_Predecessor.md`:
-
 ---
 
 # Successor and Predecessor

@@ -1,6 +1,4 @@
 
-Here is `07_02_04_BST_Traversals.md`:
-
 ---
 
 # BST Traversals

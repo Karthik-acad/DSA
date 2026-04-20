@@ -1,6 +1,4 @@
 
-Here is `07_02_02_BST_Insertion.md`:
-
 ---
 
 # BST Insertion

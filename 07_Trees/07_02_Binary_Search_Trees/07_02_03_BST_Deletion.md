@@ -1,6 +1,4 @@
 
-Here is `07_02_03_BST_Deletion.md`:
-
 ---
 
 # BST Deletion

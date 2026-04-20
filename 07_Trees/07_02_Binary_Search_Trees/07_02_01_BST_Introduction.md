@@ -1,6 +1,4 @@
 
-Now BSTs. Here is `07_02_01_BST_Introduction.md`:
-
 ---
 
 # BST Introduction
