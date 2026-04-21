@@ -137,7 +137,7 @@ The inorder property for BSTs is critical — inorder traversal of a BST always 
 
 ## Complexity Summary
 
-||Time|Space (balanced)|Space (skewed)|
+| |Time|Space (balanced)|Space (skewed)|
 |---|---|---|---|
 |Any DFS traversal|$O(n)$|$O(\log n)$|$O(n)$|
 
