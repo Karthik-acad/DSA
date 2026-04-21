@@ -5,7 +5,7 @@
 
 Inserting into a BST is straightforward — follow the BST property to find where the new key belongs and place it there. The new node always becomes a **leaf**.
 
-> **Rule.** To insert key $k$: start at the root. If $k < $ current node go left, if $k > $ current node go right. When you reach a null pointer, insert there.
+> **Rule.** To insert key $k$: start at the root. If $k <$ current node go left, if $k >$ current node go right. When you reach a null pointer, insert there.
 
 ```cpp
 #include <iostream>

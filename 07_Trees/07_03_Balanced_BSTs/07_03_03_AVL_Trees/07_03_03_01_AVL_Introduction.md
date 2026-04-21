@@ -66,7 +66,7 @@ After any insertion or deletion, we walk back up the tree updating heights. If a
 
 ## AVL vs Plain BST
 
-||Plain BST|AVL Tree|
+| |Plain BST|AVL Tree|
 |---|---|---|
 |Height|$O(n)$ worst|$O(\log n)$ guaranteed|
 |Search|$O(n)$ worst|$O(\log n)$|
