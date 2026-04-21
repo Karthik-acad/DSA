@@ -125,11 +125,11 @@ vector<int> postorderIter(TreeNode* root) {
 
 ## When to Use Which
 
-|Traversal|Use case|
-|---|---|
-|Preorder|Copy a tree, serialize a tree, prefix expression|
-|Inorder|Get BST nodes in sorted order (very important)|
-|Postorder|Delete a tree, evaluate expression tree, bottom-up DP|
+| Traversal | Use case                                              |
+| --------- | ----------------------------------------------------- |
+| Preorder  | Copy a tree, serialize a tree, prefix expression      |
+| Inorder   | Get BST nodes in sorted order (very important)        |
+| Postorder | Delete a tree, evaluate expression tree, bottom-up DP |
 
 The inorder property for BSTs is critical — inorder traversal of a BST always gives nodes in sorted order. You will use this constantly in [[07_02_00_Binary_Search_Trees]].
 
