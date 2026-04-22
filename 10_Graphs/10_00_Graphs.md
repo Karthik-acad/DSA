@@ -57,7 +57,7 @@ $$G = (V, E), \quad |V| = n, \quad |E| = m$$ $$\sum_{v} \deg(v) = 2|E| \quad \te
 
 ### MST
 
-||Prim's|Kruskal's|
+| |Prim's|Kruskal's|
 |---|---|---|
 |Data structure|Priority queue|Sort + Union-Find|
 |Time|$O((V+E)\log V)$|$O(E\log E)$|
